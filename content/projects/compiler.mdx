@@ -1,0 +1,67 @@
+---
+  title: Compiler Project
+  summary: This is a compiler project
+  image: /images/projects/compile.jpg
+  author: 'Ferhat Abderrahmane'
+  publishedAt: '2024-12-16'
+---
+
+This is a compiler project built using Flex, Bison, and C. It was developed using Notepad++ as the code editor and focuses on parsing, analyzing, and generating intermediate representations of programming language constructs.
+
+## Features
+- **Lexical Analysis**: Tokenizes input source code into meaningful symbols using Flex.
+- **Syntax Analysis**: Parses tokens into a syntax tree structure with Bison.
+- **Semantic Analysis**: Validates the meaning of parsed constructs.
+- **Code Generation**: Produces intermediate or final code output from the syntax tree.
+- **Error Handling**: Reports lexical, syntax, and semantic errors effectively.
+
+## Technologies
+- **Flex**: A lexical analyzer generator for converting input text into tokens.
+- **Bison**: A parser generator for creating syntax analyzers based on context-free grammars.
+- **C**: Used for implementing the core logic of the compiler.
+- **Notepad++**: Lightweight text editor for writing and organizing code.
+
+## Getting Started
+To get started with this compiler project, you can follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd compiler-project
+   ```
+
+2. Install the necessary tools (Flex and Bison):
+   - On Linux:
+     ```bash
+     sudo apt-get install flex bison
+     ```
+   - On Windows, use a MinGW or Cygwin environment.
+
+3. Compile the project:
+   ```bash
+   flex lexer.l
+   bison -d parser.y
+   gcc lex.yy.c parser.tab.c -o compiler
+   ```
+
+4. Run the compiler with a test file:
+   ```bash
+   ./compiler < input-file
+   ```
+
+## Project Structure
+- `lexer.l`: Defines the rules for lexical analysis.
+- `parser.y`: Contains the grammar rules and syntax analysis logic.
+- `main.c`: Entry point for the compiler, orchestrating various stages.
+- `test/`: Contains sample input programs for testing.
+
+## Deployment
+This project is designed for educational and local use. To deploy or test on a larger scale:
+- Ensure the required tools (Flex, Bison, GCC) are installed on the target system.
+- Package the necessary files and provide instructions for running the compiler.
+
+## Conclusion
+This compiler project demonstrates the fundamental concepts of compiler design, including lexical analysis, syntax parsing, and code generation. By leveraging tools like Flex and Bison, you can efficiently handle complex grammars and build robust compilers.
+
+Feel free to explore and expand the project further by adding new features like optimization, support for more language constructs, or even a code generator for specific architectures!
+
