@@ -2,32 +2,35 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+# 🚀 My Official Portfolio (Next.js + MDX)
+
+This is a modern web portfolio built using [Next.js](https://nextjs.org/) and MDX. It's designed to be fast, accessible, and easy to maintain. The project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## ✨ Features
+
+- Built with **Next.js 13+ (App Router)**
+- MDX support for writing blog posts or content-rich pages
+- Responsive and accessible design
+- Optimized with `next/font` for fast Google Font loading
+- Easy deployment with **Vercel**
+
+## 📦 Getting Started
+
+To run the project locally, clone the repository and install dependencies:
 
 ```bash
-npm run dev
+git clone https://github.com/your-username/my-official-portfolio.git
+cd my-official-portfolio
+
+# Install dependencies
+npm install
 # or
-yarn dev
+yarn install
 # or
-pnpm dev
+pnpm install
 # or
-bun dev
-```
+bun install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
